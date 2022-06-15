@@ -35,16 +35,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-/* Route::get('hello', function() {
-    return '<html><body><h1>Hello</h1><p>This is sample page.</p></body></html>';
-});
+Route::get('hello/{id?}/{pass?}', 'HelloController@index');
 
-Route::get('hello',function () use ($html) {
-    return $html;
- });
- */
+// Route::get('hello',function () use ($html) {
+//     return $html;
+//  });
 
-Route::get('hello/{msg?}',function ($msg='no message.') {
+
+/* Route::get('hello/{msg?}',function ($msg='no message.') {
 
     $html = <<<EOF
     <html>
@@ -65,4 +63,4 @@ Route::get('hello/{msg?}',function ($msg='no message.') {
     EOF;
     
        return $html;
-    });
+    }); */
