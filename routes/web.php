@@ -10,8 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-//use Illuminate\Routing\Route;
+// use Illuminate\Routing\Route;
 
 // $html = <<<EOF
 // <html>
@@ -31,9 +30,10 @@
 // </html>
 // EOF;
 
+// use Illuminate\Routing\Route;
 
-Route::get('hello','HelloController@index');
-Route::get('hello/other','HelloController@other');
+// Route::get('hello','HelloController@index');
+// Route::get('hello/other','HelloController@other');
 
 /* Route::get('hello/{msg?}',function ($msg='no message.') {
 
@@ -57,7 +57,11 @@ Route::get('hello/other','HelloController@other');
     
        return $html;
     }); */
+// Route::get('hello',function(){
+//    return view('hello/index');
+// });
 
+Route::get('hello','HelloController@index');
 
 //------実習用------
 Route::get('jissyu2','JissyuController@index');
