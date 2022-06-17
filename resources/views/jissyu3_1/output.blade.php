@@ -1,6 +1,6 @@
 <html>
 <head>
-   <title>Hello/Index</title>
+   <title>Jissyu/Index</title>
    <style>
    body {font-size:16pt; color:#999; }
    h1 { font-size:50pt; text-align:right; color:#f6f6f6;
@@ -9,12 +9,6 @@
 </head>
 <body>
     <h1>Blade/Index</h1>
-    <p>&#064;foreachディレクティブの例</p>
-    <ol>
-    @foreach($data as $item)
-    <li>{{$item}}
-    @endforeach
-    </ol>
+    <p>___(10)___</p>
  </body>
- 
 </html>

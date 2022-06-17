@@ -61,8 +61,11 @@
 //    return view('hello/index');
 // });
 
-Route::get('hello','HelloController@index');
+Route::get('hello','HelloController@index');  
 Route::post('hello','HelloController@post');
 
 //------実習用------
 Route::get('jissyu2','JissyuController@index');
+
+Route::get('jissyu3_1', 'Jissyu3_1Controller@index');
+Route::post('jissyu3_1', 'Jissyu3_1Controller@post');
