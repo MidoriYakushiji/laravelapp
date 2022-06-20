@@ -9,8 +9,8 @@
 </head>
 <body>
     <h1>Blade/Index</h1>
-    <p>___(8)___</p>
-    <form method="POST" action="___(9)___">
+    <p>お名前を入力してください</p>
+    <form method="POST" action="/jissyu3_1">
         @csrf
         <input type="text" name="msg">
         <input type="submit">
