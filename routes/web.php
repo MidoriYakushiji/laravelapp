@@ -73,3 +73,6 @@ Route::post('jissyu3_1', 'Jissyu3_1Controller@post');
 //jissyu3_2
 Route::get('jissyu4', 'Jissyu3_2Controller@index');
 Route::post('jissyu4', 'Jissyu3_2Controller@post');
+
+//jissyu3_3
+Route::get('jissyu5', 'Jissyu3_3Controller@index');
