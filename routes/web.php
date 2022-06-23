@@ -61,8 +61,13 @@
 //    return view('hello/index');
 // });
 
+use App\Http\Middleware\HelloMiddleware;
+
 Route::get('hello','HelloController@index');  
 Route::post('hello','HelloController@post');
+
+// use App\Http\Middleware\HelloMiddleware;
+Route::get('hello','HelloController@index')->middleware(HelloMiddleware::class);
 
 //------実習用------
 Route::get('jissyu2','JissyuController@index');
