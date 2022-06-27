@@ -81,3 +81,9 @@ Route::post('jissyu4', 'Jissyu3_2Controller@post');
 
 //jissyu3_3
 Route::get('jissyu5', 'Jissyu3_3Controller@index');
+
+//Chapter3_2
+Route::get('chapter3_2', 'Chapter3_2Controller@index');
+
+//Chapter3_7
+Route::get('ohara', 'OharaController@index');
