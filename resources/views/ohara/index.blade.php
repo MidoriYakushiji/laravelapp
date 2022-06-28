@@ -13,7 +13,7 @@
 @endsection
 
 @section('content')
-@___(11)___
+@parent
     <ul>
     @each ('components.items', [
                     'ITスペシャリストシステム開発コース', 
