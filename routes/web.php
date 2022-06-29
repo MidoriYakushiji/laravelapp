@@ -87,3 +87,5 @@ Route::get('chapter3_2', 'Chapter3_2Controller@index');
 
 //Chapter3_7
 Route::get('ohara', 'OharaController@index');
+
+//test
