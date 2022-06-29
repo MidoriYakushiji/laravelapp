@@ -92,3 +92,7 @@ Route::get('ohara', 'OharaController@index');
 Route::get('jissyu6', 'Jissyu4_1Controller@index');
 Route::post('jissyu6', 'Jissyu4_1Controller@post');
 
+//jissyu4_2
+Route::get('jissyu7', 'Jissyu4_2Controller@index');
+Route::post('jissyu7', 'Jissyu4_2Controller@post');
+
