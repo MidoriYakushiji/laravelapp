@@ -88,4 +88,7 @@ Route::get('chapter3_2', 'Chapter3_2Controller@index');
 //Chapter3_7
 Route::get('ohara', 'OharaController@index');
 
-//test
+//jissyu4_1
+Route::get('jissyu6', 'Jissyu4_1Controller@index');
+Route::post('jissyu6', 'Jissyu4_1Controller@post');
+
