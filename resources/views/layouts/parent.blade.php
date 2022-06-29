@@ -7,9 +7,9 @@
 <body>
 <h1>@yield('title')へようこそ！</h1>
 
-@___(6)____('header')
+@yield('header')
 
-@___(7)____('content')
+@section('content')
     <p>設置コース一覧</p>
 @show
 </body>
