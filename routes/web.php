@@ -40,3 +40,7 @@ Route::post('jissyu8', 'Jissyu4_3Controller@post');
 
 //kouka1_1
 Route::get('kouka1_1', 'Kouka1_1Controller@index');
+
+//kouka1_2
+Route::get('kouka1_2', 'Kouka1_2Controller@index');
+Route::post('kouka1_2', 'Kouka1_2Controller@post');
