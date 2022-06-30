@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class Jissyu4_1Controller extends Controller
 {
-<<<<<<< HEAD
+
     public function index()
     {
         $data = [
@@ -29,7 +29,4 @@ class Jissyu4_1Controller extends Controller
         return view('jissyu4_1.output', ['data'=>$data]);
     }
 
-=======
-    //
->>>>>>> 47571a489e7d266d4ec1145d62f56c1f5aabf654
 }
