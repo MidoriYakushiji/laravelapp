@@ -1,4 +1,4 @@
-@startuml
+@startuml jissyu4_3
 actor ユーザ
 boundary ブラウザ
 control web.php
