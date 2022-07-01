@@ -17,6 +17,11 @@ Route::post('hello/add', 'HelloController@create');
 Route::get('hello/edit', 'HelloController@edit');
 Route::post('hello/edit', 'HelloController@update');
 
+//5-16 delete
+Route::get('hello/del', 'HelloController@del');
+Route::post('hello/del', 'HelloController@remove');
+
+
 //------実習用------
 Route::get('jissyu2','JissyuController@index');
 
