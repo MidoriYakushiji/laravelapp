@@ -8,6 +8,15 @@ Route::post('hello','HelloController@post');
 // use App\Http\Middleware\HelloMiddleware;
 Route::get('hello','HelloController@index')->middleware(HelloMiddleware::class);
 
+
+//5-10 insert
+Route::get('hello/add', 'HelloController@add');
+Route::post('hello/add', 'HelloController@create');
+
+//5-11 update
+Route::get('hello/edit', 'HelloController@edit');
+Route::post('hello/edit', 'HelloController@update');
+
 //------実習用------
 Route::get('jissyu2','JissyuController@index');
 
@@ -29,7 +38,3 @@ Route::get('ohara', 'OharaController@index');
 
 //test
 
-
-//5-10 insert
-Route::get('hello/add', 'HelloController@add');
-Route::post('hello/add', 'HelloController@create');
