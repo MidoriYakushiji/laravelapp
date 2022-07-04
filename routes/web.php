@@ -21,6 +21,9 @@ Route::post('hello/edit', 'HelloController@update');
 Route::get('hello/del', 'HelloController@del');
 Route::post('hello/del', 'HelloController@remove');
 
+//5-20 show
+Route::get('hello/show', 'HelloController@show');
+
 
 //------実習用------
 Route::get('jissyu2','JissyuController@index');

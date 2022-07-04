@@ -11,14 +11,7 @@ class HelloController extends Controller
 {
     public function index(Request $request)
     {
-        if (isset($request->id))
-        {
-           $param = ['id' => $request->id];
-           $items = DB::select('select * from people where id = :id',
-              $param);
-        } else {
-           $items = DB::select('select * from people');
-        }
+        $items = DB::table('people')->orderBy('age', 'asc')->get();
         return view('hello.index', ['items' => $items]);
     }
  
@@ -41,7 +34,7 @@ class HelloController extends Controller
             'mail' => $request->mail,
             'age' => $request->age,
         ];
-        DB::insert('insert into people (name, mail, age) values (:name, :mail, :age)', $param);
+        DB::table('people')->insert($param);
         return redirect('/hello');
     }
 
@@ -79,6 +72,19 @@ public function remove(Request $request)
    DB::delete('delete from people where id = :id', $param);
    return redirect('/hello');
 }
+
+//showメソッド、IDでレコードの内容を表示
+public function show(Request $request)
+{
+   $page = $request->page;
+   $items = DB::table('people')
+       ->offset($page * 3)
+       ->limit(3)
+       ->get();
+   return view('hello.show', ['items' => $items]);
+}
+
+
 
 }  
 
