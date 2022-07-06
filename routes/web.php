@@ -24,6 +24,8 @@ Route::post('hello/del', 'HelloController@remove');
 //5-20 show
 Route::get('hello/show', 'HelloController@show');
 
+//6-4 person
+Route::get('person', 'PersonController@index');
 
 //------実習用------
 Route::get('jissyu2','JissyuController@index');
