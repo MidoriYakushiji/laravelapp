@@ -10,7 +10,7 @@ class Jissyu5_1Controller extends Controller
     public function index(Request $request)
     {
         $items = DB::select('select * from people');
-        return view('___(1)___', ['items' => $items]);
+        return view('___(1)_', ['items' => $items]);
     }
     public function show(Request $request)
     {
