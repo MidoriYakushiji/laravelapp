@@ -31,6 +31,24 @@ Route::get('person', 'PersonController@index');
 Route::get('person/find', 'PersonController@find');
 Route::post('person/find', 'PersonController@search');
 
+//6-21 person/add
+Route::get('person/add', 'PersonController@add');
+Route::post('person/add', 'PersonController@create');
+
+//6-24 person/edit/update
+Route::get('person/edit', 'PersonController@edit');
+Route::post('person/edit', 'PersonController@update');
+
+//6-27 person/delete
+Route::get('person/del', 'PersonController@delete');
+Route::post('person/del', 'PersonController@remove');
+
+//6-34 board
+Route::get('board', 'BoardController@index');
+
+Route::get('board/add', 'BoardController@add');
+Route::post('board/add', 'BoardController@create');
+
 
 //------実習用------
 Route::get('jissyu2','JissyuController@index');
