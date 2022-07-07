@@ -39,6 +39,10 @@ Route::post('person/add', 'PersonController@create');
 Route::get('person/edit', 'PersonController@edit');
 Route::post('person/edit', 'PersonController@update');
 
+//6-27 person/delete
+Route::get('person/del', 'PersonController@delete');
+Route::post('person/del', 'PersonController@remove');
+
 
 //------実習用------
 Route::get('jissyu2','JissyuController@index');
