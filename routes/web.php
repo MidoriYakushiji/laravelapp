@@ -31,6 +31,10 @@ Route::get('person', 'PersonController@index');
 Route::get('person/find', 'PersonController@find');
 Route::post('person/find', 'PersonController@search');
 
+//6-21 person/add
+Route::get('person/add', 'PersonController@add');
+Route::post('person/add', 'PersonController@create');
+
 
 //------実習用------
 Route::get('jissyu2','JissyuController@index');
