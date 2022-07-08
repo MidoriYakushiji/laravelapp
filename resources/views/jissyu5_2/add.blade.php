@@ -7,7 +7,7 @@
 @endsection
 
 @section('content')
-   <form action="___(22)___" method="post">
+   <form action="/jissyu11/add" method="post">
    <table>
       @csrf
       <tr><th>name: </th><td><input type="text" name="name"></td></tr>
