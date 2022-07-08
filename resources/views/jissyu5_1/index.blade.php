@@ -14,7 +14,7 @@
            <td>{{$item->name}}</td>
            <td>{{$item->mail}}</td>
            <td>{{$item->age}}</td>
-           <td><a href="___(5)___">詳細</a></td>
+           <td><a href="/jissyu10/show?id={{$item->id}}">詳細</a></td>
        </tr>
    @endforeach
    </table>
