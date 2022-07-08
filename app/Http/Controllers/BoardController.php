@@ -10,7 +10,7 @@ namespace App\Http\Controllers;
     
        public function index(Request $request)
        {
-           $items = Board::all();
+           $items = Board::with('person')->get();//eager roading 
            return view('board.index', ['items' => $items]);
        }
     
