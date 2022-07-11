@@ -2,7 +2,8 @@
 
 use App\Http\Middleware\HelloMiddleware;
 
-Route::get('hello','HelloController@index');  
+Route::get('hello','HelloController@index')
+    ->middleware('auth');  //auth
 Route::post('hello','HelloController@post');
 
 // use App\Http\Middleware\HelloMiddleware;
@@ -78,3 +79,12 @@ Route::get('hello/rest', 'HelloController@rest');
 //7-16 session
 Route::get('hello/session', 'HelloController@ses_get');
 Route::post('hello/session', 'HelloController@ses_put');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+//7-34 auth
+Route::get('hello/auth', 'HelloController@getAuth');
+Route::post('hello/auth', 'HelloController@postAuth');
+
