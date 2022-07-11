@@ -11,8 +11,12 @@ class HelloController extends Controller
 {
     public function index(Request $request)
     {
-        $sort = $request->sort;
-        $items = Person::orderBy($sort, 'asc')
+        if(isset($request->sort)){
+            $sort = $request->sort;
+        } else {
+            $sort = 'age';
+        }
+           $items = Person::orderBy($sort, 'asc')
            ->simplePaginate(5);
         $param = ['items' => $items, 'sort' => $sort];
         return view('hello.index', $param);
