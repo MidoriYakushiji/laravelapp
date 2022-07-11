@@ -1,22 +1,23 @@
 <?php
-namespace App;
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
 
-use Illuminate\Database\Eloquent\Model;
-
-class Restdata extends Model
+class CreateRestdataTable extends Migration
 {
-   protected $table = 'restdata';
-   protected $guarded = array('id');
-  
-   public static $rules = array(
-       'message' => 'required',
-       'url' => 'required'
-   );
-
-   public function getData()
+   public function up()
    {
-       return $this->id . ':' . $this->mssage 
-          . '(' . $this->url . ')';
+       Schema::create('restdata', 
+               function (Blueprint $table) {
+           $table->increments('id');
+           $table->string('message');
+           $table->string('url');
+           $table->timestamps();
+       });
    }
 
+   public function down()
+   {
+       Schema::dropIfExists('restdata');
+   }
 }
