@@ -69,5 +69,8 @@ Route::get('chapter3_2', 'Chapter3_2Controller@index');
 //Chapter3_7
 Route::get('ohara', 'OharaController@index');
 
-//test
+//7-6 rest
+Route::resource('rest', 'RestappController');
 
+//7-12 hello/rest
+Route::get('hello/rest', 'HelloController@rest');
