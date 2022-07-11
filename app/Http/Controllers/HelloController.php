@@ -16,8 +16,7 @@ class HelloController extends Controller
         } else {
             $sort = 'age'; 
         }
-           $items = Person::orderBy($sort, 'asc')
-           ->simplePaginate(5);
+           $items = Person::orderBy($sort, 'asc')->Paginate(5);
         $param = ['items' => $items, 'sort' => $sort];
         return view('hello.index', $param);
     }
