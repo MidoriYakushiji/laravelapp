@@ -14,7 +14,7 @@ class HelloController extends Controller
         if(isset($request->sort)){
             $sort = $request->sort;
         } else {
-            $sort = 'age';
+            $sort = 'age'; 
         }
            $items = Person::orderBy($sort, 'asc')
            ->simplePaginate(5);
