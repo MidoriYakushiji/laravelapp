@@ -74,3 +74,7 @@ Route::resource('rest', 'RestappController');
 
 //7-12 hello/rest
 Route::get('hello/rest', 'HelloController@rest');
+
+//7-16 session
+Route::get('hello/session', 'HelloController@ses_get');
+Route::post('hello/session', 'HelloController@ses_put');
