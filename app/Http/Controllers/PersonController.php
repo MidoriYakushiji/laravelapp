@@ -9,6 +9,7 @@ class PersonController extends Controller
 {
    public function index(Request $request)
    {
+<<<<<<< HEAD
       $hasItems = Person::has('boards')->get();
       $noItems = Person::doesntHave('boards')->get();
       $param = ['hasItems' => $hasItems, 'noItems' => $noItems];
@@ -74,3 +75,9 @@ class PersonController extends Controller
    }
 
  }
+=======
+       $items = Person::all();
+       return view('person.index', ['items' => $items]);
+   }
+}
+>>>>>>> jissyu1
