@@ -129,3 +129,8 @@ Route::get('jissyu14/edit', 'Jissyu6_3Controller@edit');
 Route::post('jissyu14/update', 'Jissyu6_3Controller@update');
 Route::get('jissyu14/del', 'Jissyu6_3Controller@del');
 Route::post('jissyu14/remove', 'Jissyu6_3Controller@remove');
+
+//jissyu6_4
+Route::get('jissyu15', 'Jissyu6_4Controller@index');
+Route::get('jissyu15/add', 'Jissyu6_4Controller@add');
+Route::post('jissyu15/create', 'Jissyu6_4Controller@create');
