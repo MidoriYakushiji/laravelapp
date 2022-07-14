@@ -20,10 +20,9 @@ class Jissyu6_3Controller extends Controller
         return view('jissyu6_3.show', ['item' => $item]);
     }
 
-
     public function show(Request $request)
     {
-        $item = Person::where('name',$request->input)->first();
+        $item = Person::where('id', $request->id)->first();
         return view('jissyu6_3.show', ['item' => $item]);
     }
 
